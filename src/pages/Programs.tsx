@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Calendar, Clock, MapPin, Users, Filter, Search } from 'lucide-react';
+import { GlowCard } from '../components/spotlight-card';
 
 const Programs = () => {
   const [filterStatus, setFilterStatus] = useState('all');
@@ -97,8 +98,8 @@ const Programs = () => {
       <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-5xl font-bold text-white mb-6">Programs & Events</h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <h1 className="text-5xl font-extrabold text-white mb-6 tracking-tight">Programs & Events</h1>
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed font-light tracking-wide">
               Discover our comprehensive range of workshops, competitions, networking events, and training programs 
               designed to accelerate your entrepreneurial journey.
             </p>
@@ -144,7 +145,7 @@ const Programs = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredEvents.map((event) => (
-              <div key={event.id} className="bg-slate-800 rounded-xl p-6 hover:bg-slate-700 transition-all duration-300 transform hover:scale-105 border border-slate-700 hover:border-teal-400">
+              <GlowCard key={event.id} glowColor="orange" customSize className="p-6">
                 <div className="flex justify-between items-start mb-4">
                   <span className={`px-3 py-1 rounded-full text-sm font-medium ${
                     event.status === 'upcoming' 
@@ -199,7 +200,7 @@ const Programs = () => {
                     {event.status === 'completed' ? 'Event Completed' : 'Registration Closed'}
                   </button>
                 )}
-              </div>
+              </GlowCard>
             ))}
           </div>
 
@@ -214,8 +215,8 @@ const Programs = () => {
       {/* Call to Action */}
       <section className="py-20 bg-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">Don't Miss Out!</h2>
-          <p className="text-xl text-gray-300 mb-8">
+          <h2 className="text-4xl font-extrabold text-white mb-6 tracking-tight">Don't Miss Out!</h2>
+          <p className="text-xl text-gray-200 mb-8 font-light tracking-wide">
             Subscribe to our newsletter to stay updated about upcoming events and opportunities.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">

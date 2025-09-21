@@ -1,5 +1,6 @@
 import React from 'react';
 import { Lightbulb, Users, TrendingUp, DollarSign, Award, ArrowRight, CheckCircle } from 'lucide-react';
+import { GlowCard } from '../components/spotlight-card';
 
 const StartupSupport = () => {
   const supportServices = [
@@ -96,8 +97,8 @@ const StartupSupport = () => {
       <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-5xl font-bold text-white mb-6">Startup Support & Incubation</h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <h1 className="text-5xl font-extrabold text-white mb-6 tracking-tight">Startup Support & Incubation</h1>
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed font-light tracking-wide">
               Transform your innovative ideas into successful startups with our comprehensive support ecosystem, 
               mentorship programs, and incubation services.
             </p>
@@ -115,7 +116,7 @@ const StartupSupport = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {supportServices.map((service, index) => (
-              <div key={index} className="bg-slate-800 p-8 rounded-xl hover:bg-slate-700 transition-all duration-300 transform hover:scale-105 border border-slate-700 hover:border-teal-400">
+              <GlowCard key={index} glowColor="green" customSize className="p-8">
                 <div className="p-4 bg-gradient-to-r from-blue-600 to-teal-600 rounded-lg w-16 h-16 mb-6 flex items-center justify-center">
                   <service.icon className="h-8 w-8 text-white" />
                 </div>
@@ -129,7 +130,7 @@ const StartupSupport = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </GlowCard>
             ))}
           </div>
         </div>

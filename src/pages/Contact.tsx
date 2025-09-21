@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
+import { GlowCard } from '../components/spotlight-card';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -80,8 +81,8 @@ const Contact = () => {
       <section className="py-20 bg-gradient-to-br from-slate-900 to-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-5xl font-bold text-white mb-6">Contact Us</h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <h1 className="text-5xl font-extrabold text-white mb-6 tracking-tight">Contact Us</h1>
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed font-light tracking-wide">
               Get in touch with us for any queries, collaboration opportunities, or to learn more about 
               our programs and initiatives. We're here to help you on your entrepreneurial journey.
             </p>
@@ -94,7 +95,7 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Contact Form */}
-            <div className="bg-slate-800 p-8 rounded-xl border border-slate-700">
+            <GlowCard glowColor="blue" customSize className="p-8">
               <h2 className="text-3xl font-bold text-white mb-8">Send us a Message</h2>
               
               {isSubmitted ? (
@@ -194,7 +195,7 @@ const Contact = () => {
                   </button>
                 </form>
               )}
-            </div>
+            </GlowCard>
 
             {/* Contact Information */}
             <div className="space-y-8">

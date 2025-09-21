@@ -24,10 +24,10 @@ const Footer = () => {
                   <Lightbulb className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <h2 className="text-xl font-bold text-white">Entrepreneurship Development Cell</h2>
+                  <h2 className="text-xl font-extrabold text-white tracking-tight">Entrepreneurship Development Cell</h2>
                 </div>
               </div>
-              <p className="text-gray-400 mb-6 max-w-md">
+              <p className="text-gray-200 mb-6 max-w-md font-light leading-relaxed tracking-wide">
                 Igniting ideas and building the next generation of entrepreneurs through innovation, mentorship, and comprehensive support programs.
               </p>
               <div className="flex space-x-4">
@@ -35,7 +35,7 @@ const Footer = () => {
                   <a
                     key={index}
                     href={social.href}
-                    className="p-2 bg-slate-800 rounded-lg text-gray-400 hover:text-white hover:bg-blue-600 transition-colors duration-300"
+                    className="p-2 bg-slate-800 rounded-lg text-gray-200 hover:text-white hover:bg-white hover:text-slate-900 transition-colors duration-300"
                     aria-label={social.label}
                   >
                     <social.icon className="h-5 w-5" />
@@ -46,19 +46,19 @@ const Footer = () => {
 
             {/* Quick Links */}
             <div>
-              <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
+              <h3 className="text-lg font-bold text-white mb-4 tracking-tight">Quick Links</h3>
               <ul className="space-y-2">
-                <li><Link to="/about" className="text-gray-400 hover:text-teal-400 transition-colors duration-300">About Us</Link></li>
-                <li><Link to="/programs" className="text-gray-400 hover:text-teal-400 transition-colors duration-300">Events</Link></li>
-                <li><Link to="/startup-support" className="text-gray-400 hover:text-teal-400 transition-colors duration-300">Startup Support</Link></li>
-                <li><Link to="/team" className="text-gray-400 hover:text-teal-400 transition-colors duration-300">Team</Link></li>
+                <li><Link to="/about" className="text-gray-200 hover:text-white transition-colors duration-300 font-light tracking-wide">About Us</Link></li>
+                <li><Link to="/programs" className="text-gray-200 hover:text-white transition-colors duration-300 font-light tracking-wide">Events</Link></li>
+                <li><Link to="/startup-support" className="text-gray-200 hover:text-white transition-colors duration-300 font-light tracking-wide">Startup Support</Link></li>
+                <li><Link to="/team" className="text-gray-200 hover:text-white transition-colors duration-300 font-light tracking-wide">Team</Link></li>
               </ul>
             </div>
 
             {/* Contact Info */}
             <div>
-              <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
-              <ul className="space-y-2 text-gray-400">
+              <h3 className="text-lg font-bold text-white mb-4 tracking-tight">Contact</h3>
+              <ul className="space-y-2 text-gray-200 font-light tracking-wide">
                 <li>College Campus</li>
                 <li>Innovation Block, Room 201</li>
                 <li>edc@college.edu</li>
@@ -70,14 +70,14 @@ const Footer = () => {
 
         <div className="border-t border-slate-800 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-200 text-sm font-light tracking-wide">
               © {currentYear} Entrepreneurship Development Cell. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-gray-400 hover:text-teal-400 transition-colors duration-300 text-sm">
+              <a href="#" className="text-gray-200 hover:text-white transition-colors duration-300 text-sm font-light tracking-wide">
                 Privacy Policy
               </a>
-              <a href="#" className="text-gray-400 hover:text-teal-400 transition-colors duration-300 text-sm">
+              <a href="#" className="text-gray-200 hover:text-white transition-colors duration-300 text-sm font-light tracking-wide">
                 Terms of Service
               </a>
             </div>

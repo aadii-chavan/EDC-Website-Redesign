@@ -1,5 +1,6 @@
 import React from 'react';
 import { Target, Eye, Award, Users, Lightbulb, TrendingUp } from 'lucide-react';
+import { GlowCard } from '../components/spotlight-card';
 
 const About = () => {
   const objectives = [
@@ -31,8 +32,8 @@ const About = () => {
       <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-5xl font-bold text-white mb-6">About Our EDC</h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <h1 className="text-5xl font-extrabold text-white mb-6 tracking-tight">About Our EDC</h1>
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed font-light tracking-wide">
               The Entrepreneurship Development Cell is the driving force behind innovation and startup culture in our college, 
               dedicated to nurturing the next generation of entrepreneurs and business leaders.
             </p>
@@ -45,8 +46,8 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-white mb-8">What is an EDC?</h2>
-              <div className="space-y-6 text-gray-300 leading-relaxed">
+              <h2 className="text-4xl font-extrabold text-white mb-8 tracking-tight">What is an EDC?</h2>
+              <div className="space-y-6 text-gray-200 leading-relaxed font-light tracking-wide">
                 <p>
                   An Entrepreneurship Development Cell (EDC) is a specialized unit within educational institutions 
                   designed to promote entrepreneurial thinking, innovation, and startup culture among students and faculty.
@@ -63,8 +64,8 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-slate-800 p-8 rounded-xl">
-              <h3 className="text-2xl font-semibold text-white mb-6">Our Role in College</h3>
+            <GlowCard glowColor="green" customSize className="p-8">
+              <h3 className="text-2xl font-bold text-white mb-6 tracking-tight">Our Role in College</h3>
               <ul className="space-y-4">
                 {[
                   "Skill Development & Training Programs",
@@ -80,7 +81,7 @@ const About = () => {
                   </li>
                 ))}
               </ul>
-            </div>
+            </GlowCard>
           </div>
         </div>
       </section>

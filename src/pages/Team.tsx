@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Linkedin, User } from 'lucide-react';
+import { GlowCard } from '../components/spotlight-card';
 
 const Team = () => {
   const facultyCoordinators = [
@@ -86,8 +87,8 @@ const Team = () => {
       <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-5xl font-bold text-white mb-6">Our Team</h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <h1 className="text-5xl font-extrabold text-white mb-6 tracking-tight">Our Team</h1>
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed font-light tracking-wide">
               Meet the dedicated individuals who drive innovation, mentor aspiring entrepreneurs, 
               and create an ecosystem that fosters startup growth and development.
             </p>
@@ -105,7 +106,7 @@ const Team = () => {
 
           <div className="grid md:grid-cols-2 gap-12">
             {facultyCoordinators.map((faculty, index) => (
-              <div key={index} className="bg-slate-800 p-8 rounded-xl hover:bg-slate-700 transition-all duration-300 transform hover:scale-105 border border-slate-700 hover:border-teal-400">
+              <GlowCard key={index} glowColor="purple" customSize className="p-8">
                 <div className="flex flex-col items-center text-center">
                   <div className="w-32 h-32 rounded-full overflow-hidden mb-6 border-4 border-teal-400">
                     <img
@@ -134,7 +135,7 @@ const Team = () => {
                     </a>
                   </div>
                 </div>
-              </div>
+              </GlowCard>
             ))}
           </div>
         </div>

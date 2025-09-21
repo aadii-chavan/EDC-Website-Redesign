@@ -26,8 +26,8 @@ const Header = () => {
               <Lightbulb className="h-6 w-6 text-white" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-white">EDC</h1>
-              <p className="text-xs text-gray-400 hidden sm:block">Entrepreneurship Development Cell</p>
+              <h1 className="text-xl font-extrabold text-white tracking-tight">EDC</h1>
+              <p className="text-xs text-gray-200 hidden sm:block font-light tracking-wide">Entrepreneurship Development Cell</p>
             </div>
           </Link>
 
@@ -37,8 +37,8 @@ const Header = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`text-sm font-medium transition-colors duration-300 hover:text-teal-400 ${
-                  isActive(item.path) ? 'text-teal-400' : 'text-gray-300'
+                className={`text-sm font-semibold transition-colors duration-300 hover:text-white tracking-wide ${
+                  isActive(item.path) ? 'text-white' : 'text-gray-200'
                 }`}
               >
                 {item.label}
@@ -49,7 +49,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 rounded-md text-gray-300 hover:text-white hover:bg-slate-800 transition-colors duration-300"
+            className="lg:hidden p-2 rounded-md text-gray-200 hover:text-white hover:bg-slate-800 transition-colors duration-300"
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -64,8 +64,8 @@ const Header = () => {
                   key={item.path}
                   to={item.path}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`block px-3 py-2 text-base font-medium transition-colors duration-300 hover:text-teal-400 ${
-                    isActive(item.path) ? 'text-teal-400 bg-slate-800' : 'text-gray-300'
+                  className={`block px-3 py-2 text-base font-semibold transition-colors duration-300 hover:text-white tracking-wide ${
+                    isActive(item.path) ? 'text-white bg-slate-800' : 'text-gray-200'
                   }`}
                 >
                   {item.label}

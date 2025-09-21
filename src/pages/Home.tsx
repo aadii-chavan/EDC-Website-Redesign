@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Rocket, Users, TrendingUp, Calendar, Star } from 'lucide-react';
 import Prism from '../components/Prism';
+import { GlowCard } from '../components/spotlight-card';
 
 const Home = () => {
   const [email, setEmail] = useState('');
@@ -51,8 +52,8 @@ const Home = () => {
             scale={3.6}
             hueShift={0}
             colorFrequency={1}
-            noise={0.5}
-            glow={1}
+            noise={0.4}
+            glow={0.7}
           />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
@@ -105,8 +106,8 @@ const Home = () => {
                 <div className="p-4 bg-gradient-to-r from-blue-600 to-teal-600 rounded-lg w-16 h-16 mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <stat.icon className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-3xl font-bold text-white mb-2">{stat.value}</h3>
-                <p className="text-gray-400">{stat.label}</p>
+                <h3 className="text-3xl font-extrabold text-white mb-2 tracking-tight">{stat.value}</h3>
+                <p className="text-gray-200 font-light tracking-wide">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -117,8 +118,8 @@ const Home = () => {
       <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-6">Our Mission</h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <h2 className="text-4xl font-extrabold text-white mb-6 tracking-tight">Our Mission</h2>
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed font-light tracking-wide">
               We are dedicated to fostering an entrepreneurial ecosystem that empowers students to turn their innovative ideas into successful ventures through comprehensive support, mentorship, and resources.
             </p>
           </div>
@@ -141,11 +142,11 @@ const Home = () => {
                 icon: "💡"
               }
             ].map((item, index) => (
-              <div key={index} className="bg-slate-800 p-8 rounded-xl hover:bg-slate-700 transition-all duration-300 transform hover:scale-105">
+              <GlowCard key={index} glowColor="blue" customSize className="p-8">
                 <div className="text-4xl mb-4">{item.icon}</div>
-                <h3 className="text-xl font-semibold text-white mb-4">{item.title}</h3>
-                <p className="text-gray-400 leading-relaxed">{item.description}</p>
-              </div>
+                <h3 className="text-xl font-bold text-white mb-4 tracking-tight">{item.title}</h3>
+                <p className="text-gray-200 leading-relaxed font-light tracking-wide">{item.description}</p>
+              </GlowCard>
             ))}
           </div>
         </div>
@@ -155,24 +156,24 @@ const Home = () => {
       <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-6">Success Stories</h2>
-            <p className="text-xl text-gray-300">Hear from entrepreneurs who started their journey with us</p>
+            <h2 className="text-4xl font-extrabold text-white mb-6 tracking-tight">Success Stories</h2>
+            <p className="text-xl text-gray-200 font-light tracking-wide">Hear from entrepreneurs who started their journey with us</p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-slate-800 p-8 rounded-xl border border-slate-700 hover:border-teal-400 transition-all duration-300">
+              <GlowCard key={index} glowColor="purple" customSize className="p-8">
                 <div className="flex mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                   ))}
                 </div>
-                <p className="text-gray-300 mb-6 italic">"{testimonial.content}"</p>
+                <p className="text-gray-200 mb-6 italic font-light leading-relaxed tracking-wide">"{testimonial.content}"</p>
                 <div>
-                  <h4 className="text-white font-semibold">{testimonial.name}</h4>
-                  <p className="text-teal-400">{testimonial.role}</p>
+                  <h4 className="text-white font-bold tracking-tight">{testimonial.name}</h4>
+                  <p className="text-white font-light tracking-wide">{testimonial.role}</p>
                 </div>
-              </div>
+              </GlowCard>
             ))}
           </div>
         </div>
@@ -181,8 +182,8 @@ const Home = () => {
       {/* Newsletter Section */}
       <section className="py-20 bg-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">Stay Updated</h2>
-          <p className="text-xl text-gray-300 mb-8">
+          <h2 className="text-4xl font-extrabold text-white mb-6 tracking-tight">Stay Updated</h2>
+          <p className="text-xl text-gray-200 mb-8 font-light tracking-wide">
             Subscribe to our newsletter for the latest updates on events, opportunities, and success stories.
           </p>
           
