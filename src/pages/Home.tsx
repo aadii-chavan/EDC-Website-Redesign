@@ -57,28 +57,39 @@ const Home = () => {
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
           <div className="animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-teal-400 to-blue-400 bg-clip-text text-transparent">
-              Igniting Ideas.
-            </h1>
-            <h2 className="text-4xl md:text-6xl font-bold mb-8 text-white">
-              Building Entrepreneurs.
-            </h2>
-            <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Transform your innovative ideas into successful startups with comprehensive support, mentorship, and resources from our Entrepreneurship Development Cell.
+            <div className="mb-8">
+              <h1 className="text-6xl md:text-8xl font-extrabold mb-4 text-white tracking-tight">
+                Igniting
+              </h1>
+              <h2 className="text-5xl md:text-7xl font-light text-gray-100 tracking-wide">
+                Ideas.
+              </h2>
+            </div>
+            <div className="mb-8">
+              <h3 className="text-4xl md:text-6xl font-bold mb-4 text-white tracking-tight">
+                Building
+              </h3>
+              <h4 className="text-3xl md:text-5xl font-light text-gray-200 tracking-wide">
+                Entrepreneurs.
+              </h4>
+            </div>
+            <p className="text-lg md:text-xl text-gray-200 mb-16 max-w-4xl mx-auto leading-relaxed font-light tracking-wide">
+              Transform your innovative ideas into successful startups with comprehensive support, 
+              mentorship, and resources from our Entrepreneurship Development Cell.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
               <Link
                 to="/contact"
-                className="px-8 py-4 bg-gradient-to-r from-blue-600 to-teal-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-teal-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center group"
+                className="px-10 py-4 bg-white text-slate-900 font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl flex items-center group text-lg tracking-wide"
               >
-                Join Us
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+                Join Our Community
+                <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
               <Link
                 to="/programs"
-                className="px-8 py-4 border-2 border-teal-400 text-teal-400 font-semibold rounded-lg hover:bg-teal-400 hover:text-slate-900 transition-all duration-300 transform hover:scale-105"
+                className="px-10 py-4 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-slate-900 transition-all duration-300 transform hover:scale-105 text-lg tracking-wide"
               >
-                Upcoming Events
+                Explore Programs
               </Link>
             </div>
           </div>
