@@ -119,7 +119,7 @@ const Programs = () => {
                 placeholder="Search events..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-10 pr-4 py-3 bg-slate-700 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-400 transition-colors duration-300"
+                className="w-full pl-10 pr-4 py-3 bg-black border border-slate-800 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-400 transition-colors duration-300"
               />
             </div>
 
@@ -129,7 +129,7 @@ const Programs = () => {
               <select
                 value={filterStatus}
                 onChange={(e) => setFilterStatus(e.target.value)}
-                className="bg-slate-700 border border-slate-600 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-teal-400 transition-colors duration-300"
+                className="bg-black border border-slate-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-teal-400 transition-colors duration-300"
               >
                 <option value="all">All Events</option>
                 <option value="upcoming">Upcoming</option>
@@ -223,7 +223,7 @@ const Programs = () => {
             <input
               type="email"
               placeholder="Enter your email address"
-              className="flex-1 px-6 py-3 bg-slate-800 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-400 transition-colors duration-300"
+              className="flex-1 px-6 py-3 bg-black border border-slate-800 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-400 transition-colors duration-300"
             />
             <button className="px-8 py-3 bg-white text-slate-900 font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-300">
               Subscribe

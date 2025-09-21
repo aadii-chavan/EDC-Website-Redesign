@@ -117,8 +117,8 @@ const Contact = () => {
                         name="name"
                         value={formData.name}
                         onChange={handleInputChange}
-                        className={`w-full px-4 py-3 bg-slate-700 border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-400 transition-colors duration-300 ${
-                          errors.name ? 'border-red-500' : 'border-slate-600'
+                        className={`w-full px-4 py-3 bg-black border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-400 transition-colors duration-300 ${
+                          errors.name ? 'border-red-500' : 'border-slate-800'
                         }`}
                         placeholder="Your full name"
                       />
@@ -135,8 +135,8 @@ const Contact = () => {
                         name="email"
                         value={formData.email}
                         onChange={handleInputChange}
-                        className={`w-full px-4 py-3 bg-slate-700 border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-400 transition-colors duration-300 ${
-                          errors.email ? 'border-red-500' : 'border-slate-600'
+                        className={`w-full px-4 py-3 bg-black border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-400 transition-colors duration-300 ${
+                          errors.email ? 'border-red-500' : 'border-slate-800'
                         }`}
                         placeholder="your.email@example.com"
                       />
@@ -153,8 +153,8 @@ const Contact = () => {
                       name="subject"
                       value={formData.subject}
                       onChange={handleInputChange}
-                      className={`w-full px-4 py-3 bg-slate-700 border rounded-lg text-white focus:outline-none focus:border-teal-400 transition-colors duration-300 ${
-                        errors.subject ? 'border-red-500' : 'border-slate-600'
+                      className={`w-full px-4 py-3 bg-black border rounded-lg text-white focus:outline-none focus:border-teal-400 transition-colors duration-300 ${
+                        errors.subject ? 'border-red-500' : 'border-slate-800'
                       }`}
                     >
                       <option value="">Select a subject</option>
@@ -178,8 +178,8 @@ const Contact = () => {
                       rows={6}
                       value={formData.message}
                       onChange={handleInputChange}
-                      className={`w-full px-4 py-3 bg-slate-700 border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-400 transition-colors duration-300 resize-none ${
-                        errors.message ? 'border-red-500' : 'border-slate-600'
+                      className={`w-full px-4 py-3 bg-black border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-teal-400 transition-colors duration-300 resize-none ${
+                        errors.message ? 'border-red-500' : 'border-slate-800'
                       }`}
                       placeholder="Tell us about your inquiry or how we can help you..."
                     ></textarea>
