@@ -94,7 +94,7 @@ const Programs = () => {
   return (
     <div className="pt-20 pb-16">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-900 to-slate-800">
+      <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-5xl font-bold text-white mb-6">Programs & Events</h1>
@@ -107,7 +107,7 @@ const Programs = () => {
       </section>
 
       {/* Filter and Search Section */}
-      <section className="py-12 bg-slate-800/50">
+      <section className="py-12 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row gap-6 items-center justify-between">
             {/* Search */}
@@ -212,7 +212,7 @@ const Programs = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-r from-blue-900 to-teal-900">
+      <section className="py-20 bg-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">Don't Miss Out!</h2>
           <p className="text-xl text-gray-300 mb-8">

@@ -93,7 +93,7 @@ const StartupSupport = () => {
   return (
     <div className="pt-20 pb-16">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-900 to-slate-800">
+      <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-5xl font-bold text-white mb-6">Startup Support & Incubation</h1>
@@ -136,7 +136,7 @@ const StartupSupport = () => {
       </section>
 
       {/* Incubation Process */}
-      <section className="py-20 bg-slate-800/50">
+      <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-6">Incubation Process</h2>
@@ -188,7 +188,7 @@ const StartupSupport = () => {
       </section>
 
       {/* Resources & Facilities */}
-      <section className="py-20 bg-slate-800/50">
+      <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-6">Resources & Facilities</h2>
