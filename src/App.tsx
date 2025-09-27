@@ -8,6 +8,7 @@ import Programs from './pages/Programs';
 import StartupSupport from './pages/StartupSupport';
 import Team from './pages/Team';
 import Contact from './pages/Contact';
+import HorizonDemo from './pages/HorizonDemo';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/startup-support" element={<StartupSupport />} />
             <Route path="/team" element={<Team />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/horizon-demo" element={<HorizonDemo />} />
           </Routes>
         </main>
         <Footer />
